@@ -20,6 +20,7 @@
     }
     #hero, .section-container {
         display: block;
+        height: 45vh;
     }
     .arrow {
         display: none;
