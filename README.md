@@ -6,7 +6,7 @@ I built my portfolio website from scratch and I used pure CSS to make it respons
 
 Demo: https://damistacks.github.io/myportfolio/
 
-![nyportfolio](./capture.webp)
+![myportfolio](./capture.webp)
 
 
 ## Built With
