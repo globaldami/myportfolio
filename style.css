@@ -643,7 +643,7 @@ article {
   line-height: 1.6rem;
   color: var(--text-body);
   margin-bottom: 1rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .project-tags {
