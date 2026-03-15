@@ -1,115 +1,265 @@
+/* =====================
+   MAX WIDTH 1400px
+   ===================== */
 @media screen and (max-width: 1400px) {
-    #hero {
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
-    .about-containers {
-        flex-wrap: wrap;
-    }
+  #hero {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
 }
 
+/* =====================
+   MAX WIDTH 1200px
+   ===================== */
 @media screen and (max-width: 1200px) {
-    #desktop-nav {
-        display: none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
-    #experience, .experience-details-container {
-        margin-top: 2rem;
-    }
-    #hero, .section-container {
-        display: block;
-        height: 40vh;
-    }
-    #contact {
+  /* Nav */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  /* Sections */
+  section {
+    margin: 0 5%;
+    height: fit-content;
+  }
+
+  /* Hero */
+  #hero {
     display: block;
-    height: 15vh;
-    }
-    .arrow {
-        display: none;
-    }
-    section, .section-container {
-        height: fit-content;
-    }
-    section {
-        margin: 0 5%;
-    }
-    .section_pic-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
-    .about-containers {
-        margin-top: 0;
-    }
+    height: fit-content;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+  }
+
+  .section_pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  /* About */
+  #about {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .section-container {
+    display: block;
+    height: fit-content;
+    margin-top: 1.5rem;
+  }
+
+  /* Experience */
+  #experience {
+    margin-top: 3rem;
+  }
+
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  .exp-item {
+    flex-wrap: nowrap;
+    gap: 0.8rem;
+  }
+
+  .exp-date {
+    width: auto;
+  }
+
+  /* Articles inside cards */
+  .article-container {
+    justify-content: flex-start;
+  }
+
+  article {
+    width: calc(50% - 1rem);
+  }
+
+  /* Projects */
+  #projects .details-container {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+
+  /* Contact */
+  #contact {
+    display: flex;
+    height: fit-content;
+    padding-bottom: 3rem;
+  }
+
+  /* Hide arrows */
+  .arrow {
+    display: none;
+  }
 }
 
+/* =====================
+   MAX WIDTH 600px
+   ===================== */
 @media screen and (max-width: 600px) {
-    #contact, footer {
-        height: 40vh;
-    }
-    #hero {
-        height: 70vh;
-        margin-bottom: 2rem;
-    }
-    article {
-        font-size: 1rem;
-    }
-    footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
+  /* Hero */
+  #hero {
+    height: auto;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
 
-    .contact-info-upper-container {
-        flex-direction: column;
-    }
-    
-    .contact-info-container {
-        margin: 0 0.5rem;
-    }
-    .contact-info-container p, .new-links li a {
-        font-size: 1rem;
-    }
-    .experience-sub-title {
-        font-size: 1.25rem;
-    }
-    .logo {
-        font-size: 1.5rem;
-    }
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
-    .section_pic-container {
-        width: auto;
-        height: 46vh;
-        justify-content: center;
-    }
+  #hero > .section_pic-container {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
 
-    #hero > .section_pic-container {
-        width: auto;
-        height: auto;
-        justify-content: center;
-    }
+  .avatar {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0;
+  }
 
-    .avatar {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 0;
-    }
-    
-    .section_text_p2 {
-        font-size: 1.5rem;
-    }
-    .title {
-        font-size: 2rem;
-    }
-    .text-container {
-        text-align: center;
-    }
-    .about-pic {
-        margin-top: 2rem;
-    }
+  .section_text_p2 {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  /* About */
+  #about {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .section-container {
+    margin-top: 1rem;
+    gap: 1.5rem;
+  }
+
+  .section_pic-container {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+
+  .about-pic {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
+  /* Experience */
+  #experience {
+    margin-top: 2rem;
+  }
+
+  .exp-block:first-child {
+    margin-top: 1rem;
+  }
+
+  .exp-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .exp-role {
+    font-size: 1rem;
+  }
+
+  .exp-date {
+    width: auto;
+    font-size: 0.85rem;
+  }
+
+  .exp-sub {
+    font-size: 0.8rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  /* Cards stack vertically */
+  .about-containers {
+    flex-direction: column;
+  }
+
+  /* Articles */
+  article {
+    width: calc(50% - 1rem);
+    font-size: 1rem;
+  }
+
+  .article-container {
+    justify-content: flex-start;
+  }
+
+  /* Projects */
+  #projects {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  #projects .details-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Contact */
+  #contact {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+  }
+
+  .contact-info-container {
+    margin: 0 0.5rem;
+  }
+
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  footer {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
 }

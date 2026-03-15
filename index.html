@@ -1,429 +1,624 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Oluwasegun Idowu">
-         <meta name="keywords" content="Software Engineer, About, Experience, Projects, Contact, Resume">
-        <title>DamiStacks | Portfolio - Software Engineer</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="mediaqueries.css" />
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <link rel="icon" type="image/svg+xml" href="./assets/favicon.ico">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Oluwasegun Idowu" />
+    <meta
+      name="keywords"
+      content="Software Engineer, About, Experience, Projects, Contact, Resume"
+    />
+    <title>DamiStacks | Portfolio - Software Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.ico" />
+  </head>
 
-    <body>
-
-        <!-- NAV -->
-
-        <nav id="desktop-nav">
-            <a href="index.html">
-                <div class="logo">DamiStacks</div>
-            </a>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://medium.com/@damistacks" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <nav id="hamburger-nav">
-            <div class="logo">DamiStacks</div>
-
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                    <li><a href="https://medium.com/@damistacks" target="_blank" rel="noopener noreferrer" onclick="toggleMenu()">Blog</a></li>
-                </div>
-            </div>
-        </nav>
-
-        <!-- HERO SECTION -->
-
-        <section id="hero">
-            <div class="section_pic-container">
-                <img src="./assets/profile-pic.png" alt="LogicalDami's profile picture" class="avatar">
-            </div>
-
-            <div class="section_text">
-                <p class="section_text_p1">Hello, I'm</p>
-                <h1 class="title"><span id="element"></span></h1>
-                <p class="section_text_p2">Software Engineer</p>
-
-                <div class="btn-container">
-                    <button class="btn btn-color-1" onclick="location.href='#contact'">
-                        Contact Info
-                    </button>
-                    <button class="btn btn-color-2" onclick="window.open('./assets/Resume-Oluwasegun-Idowu.pdf')">
-                        Download CV
-                    </button>
-                </div>
-
-                <div id="socials-container">
-                    <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon-hero" onclick="window.open('https://linkedin.com/in/oluwasegunidowu', '_blank')">
-                    <img src="./assets/github.png" alt="My GitHub profile" class="icon-hero" onclick="window.open('https://github.com/damistacks', '_blank')">
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-
-        <section id="about" class="fade-section hidden">
-            <p class="section_text_p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
-            
-            <div class="section-container">
-                
-                <div class="section_pic-container">
-                    <img 
-                        src="./assets/about-pic.png" 
-                        alt="profile picture" 
-                        class="about-pic"
-                    >
-                </div>
-                
-                <div class="about-details-container">
-                    
-                    <div class="about-containers">
-                        
-                        <div class="details-container text-container">
-                            <img 
-                                src="./assets/experience.png" 
-                                alt="Experience icon" 
-                                class="icon-about"
-                            >
-                            <h3>Experience</h3>
-                            <p>5+ years <br>Web Development</p>
-                        </div>
-
-                        <div class="details-container text-container">
-                            <img 
-                                src="./assets/education.png" 
-                                alt="Education icon" 
-                                class="icon-about"
-                            >
-                            <h3>Education</h3>
-                            <p>Lagos State University <br>Mechanical Engineering <br>Bachelor's Degree (BSc)</p>
-                        </div>
-
-
-                    </div>
-
-                    <div class="text-container about-me">
-                        <p>
-                            Hi there! I'm Dami, a value-oriented software engineer. I specialize in turning ideas into reality through strategic thinking — covering sketches, design, and development — to create web applications that engage users and support business growth. <br> In my spare time, I create content. Most of the content on my <a onclick="window.open('https://medium.com/@damistacks', '_blank')" class="custom-link">blog</a> focus on a single goal – helping people learn, as I document my tech journey.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <img 
-                src="./assets/arrow.png" 
-                alt="Arrow icon" class="icon-arrow arrow" 
-                onclick="location.href='#experience'"
+  <body id="top">
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <a href="index.html">
+        <div class="logo">DamiStacks</div>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="https://medium.com/@damistacks"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Blog</a
             >
+          </li>
+        </ul>
+        <button
+          class="theme-toggle"
+          onclick="toggleTheme()"
+          aria-label="Toggle theme"
+        >
+          <div class="toggle-track"><span class="toggle-thumb"></span></div>
+        </button>
+      </div>
+    </nav>
 
-        </section>
-
-        <!-- EXPERIENCE SECTION -->
-
-        <section id="experience" class="fade-section hidden">
-            <p class="section_text_p1">Explore My</p>
-            <h1 class="title">Experience</h1>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        
-                        <h2 class="experience-sub-title">Tech Stack</h2>
-                        
-                        <div class="article-container">
-                            <article>
-                                <img 
-                                    src="./assets/checkmark.png" 
-                                    alt="Experience icon"
-                                    class="icon-experience"    
-                                >
-                                <div>
-                                    <h3>HTML</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-
-                            <article>
-                                <img 
-                                    src="./assets/checkmark.png" 
-                                    alt="Experience icon"
-                                    class="icon-experience"    
-                                >
-                                <div>
-                                    <h3>CSS</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-
-                            <article>
-                                <img 
-                                    src="./assets/checkmark.png" 
-                                    alt="Experience icon"
-                                    class="icon-experience"    
-                                >
-                                <div>
-                                    <h3>JavaScript</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-
-                            <article>
-                                <img 
-                                    src="./assets/checkmark.png" 
-                                    alt="Experience icon"
-                                    class="icon-experience"    
-                                >
-                                <div>
-                                    <h3>React</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                        </div>
-
-                    </div>
-
-                    <div class="details-container">
-                        
-                        <h2 class="experience-sub-title">Design Tools</h2>
-                        
-                        <div class="article-container">
-                            <article>
-                                <img 
-                                    src="./assets/checkmark.png" 
-                                    alt="Experience icon"
-                                    class="icon-experience"    
-                                >
-                                <div>
-                                    <h3>Pen & Paper</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-
-                            <article>
-                                <img 
-                                    src="./assets/checkmark.png" 
-                                    alt="Experience icon"
-                                    class="icon-experience"    
-                                >
-                                <div>
-                                    <h3>Figma</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-
-                            <article>
-                                <img 
-                                    src="./assets/checkmark.png" 
-                                    alt="Experience icon"
-                                    class="icon-experience"    
-                                >
-                                <div>
-                                    <h3>CorelDraw</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-
-                            <article>
-                                <img 
-                                    src="./assets/checkmark.png" 
-                                    alt="Experience icon"
-                                    class="icon-experience"    
-                                >
-                                <div>
-                                    <h3>PhotoShop</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-            <img 
-                src="./assets/arrow.png" 
-                alt="Arrow icon" class="icon-arrow arrow" 
-                onclick="location.href='#projects'"
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+      <div class="logo">DamiStacks</div>
+      <div class="hamburger-menu">
+        <button
+          class="theme-toggle"
+          onclick="toggleTheme()"
+          aria-label="Toggle theme"
+        >
+          <div class="toggle-track"><span class="toggle-thumb"></span></div>
+        </button>
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <a
+              href="https://medium.com/@damistacks"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="toggleMenu()"
+              >Blog</a
             >
-        </section>
+          </li>
+        </div>
+      </div>
+    </nav>
 
-        <!-- PROJECTS SECTION -->
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="section_pic-container">
+        <img
+          src="./assets/profile-pic.webp"
+          alt="Dami's profile picture"
+          class="avatar"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title"><span id="element"></span></h1>
+        <p class="section_text_p2">Software Engineer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href = '#contact'">
+            Contact Info
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume-Oluwasegun-Idowu.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon-hero"
+            onclick="
+              window.open('https://linkedin.com/in/oluwasegunidowu', '_blank')
+            "
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub profile"
+            class="icon-hero"
+            onclick="window.open('https://github.com/damistacks', '_blank')"
+          />
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon-arrow arrow"
+        onclick="location.href = '#about'"
+      />
+    </section>
 
-        <section id="projects" class="fade-section hidden">
-            <p class="section_text_p1">Browse My Recent</p>
-            <h1 class="title">Projects</h1>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="fade-section hidden">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img
+            src="./assets/about-pic.webp"
+            alt="Profile picture"
+            class="about-pic"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-me">
+            <p>
+              Hi there! I'm Dami, a value-oriented software engineer. I
+              specialize in turning ideas into reality through strategic
+              thinking — covering sketches, design, and development — to create
+              web applications that engage users and support business growth.
+              <br /><br />
+              In my spare time, I create content. Most of the content on my
+              <a
+                onclick="
+                  window.open('https://medium.com/@damistacks', '_blank')
+                "
+                class="custom-link"
+                >blog</a
+              >
+              focus on a single goal – helping people learn, as I document my
+              tech journey.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon-arrow arrow"
+        onclick="location.href = '#experience'"
+      />
+    </section>
 
-            <div class="experience-details-container">
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="fade-section hidden">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
 
-                <div class="about-containers">
-                
+      <div class="experience-details-container">
+        <!-- Work Experience -->
+        <div class="exp-block">
+          <h2 class="exp-section-title">Work Experience</h2>
 
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img 
-                                src="./assets/project-1.png" 
-                                alt="Project 1"
-                                class="project-img"
-                            >
-                        </div>
-                        <h2 class="experience-sub-title project-title">Project One</h2>
-                        <div class="btn-container">
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="window.open('https://github.com/damistacks', '_blank')"
-                                >
-                                GitHub
-                            </button>
-                            <button 
-                            class="btn btn-color-2 project-btn" 
-                            onclick="window.open('https://github.com/damistacks', '_blank')"
-                            >
-                            Live Demo
-                        </button>
-                        </div>
-                    </div>
-
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img 
-                                src="./assets/project-2.png" 
-                                alt="Project 2"
-                                class="project-img"
-                            >
-                        </div>
-                        <h2 class="experience-sub-title project-title">Project Two</h2>
-                        <div class="btn-container">
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="window.open('https://github.com/damistacks', '_blank')"
-                            >
-                                GitHub
-                            </button>
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="window.open('https://github.com/damistacks', '_blank')"
-                            >
-                                Live Demo
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img 
-                                src="./assets/project-3.webp" 
-                                alt="Bankist Website"
-                                class="project-img"
-                            >
-                        </div>
-                        <h2 class="experience-sub-title project-title">Bankist Website</h2>
-                        <div class="btn-container">
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="window.open('https://github.com/damistacks/bankist', '_blank')"
-                            >
-                                GitHub
-                            </button>
-                            <button 
-                                class="btn btn-color-2 project-btn" 
-                                onclick="window.open('https://damistacks.github.io/bankist/', '_blank')"
-                            >
-                                Live Demo
-                            </button>
-                        </div>
-                    </div>
-
-
-                </div>
-
+          <div class="exp-item">
+            <div class="exp-avatar">F</div>
+            <div class="exp-info">
+              <div class="exp-role-row">
+                <h3 class="exp-role">Full-Stack Developer</h3>
+                <span class="exp-date">Oct. 2025 – Present</span>
+              </div>
+              <p class="exp-sub">Freelancer</p>
             </div>
+          </div>
 
-            <img 
-                src="./assets/arrow.png" 
-                alt="Arrow icon" class="icon-arrow arrow" 
-                onclick="location.href='#contact'"
+          <div class="exp-item">
+            <div class="exp-avatar">D</div>
+            <div class="exp-info">
+              <div class="exp-role-row">
+                <h3 class="exp-role">Store Manager</h3>
+                <span class="exp-date">Dec. 2021 – Feb. 2025</span>
+              </div>
+              <p class="exp-sub">Debron Mart Limited</p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-avatar">R</div>
+            <div class="exp-info">
+              <div class="exp-role-row">
+                <h3 class="exp-role">Social Media Manager</h3>
+                <span class="exp-date">Sep. 2021 – Feb. 2022</span>
+              </div>
+              <p class="exp-sub">Rishcon Digital Agency</p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-avatar">R</div>
+            <div class="exp-info">
+              <div class="exp-role-row">
+                <h3 class="exp-role">Brand Designer & Founder</h3>
+                <span class="exp-date">Nov. 2020 – Aug. 2021</span>
+              </div>
+              <p class="exp-sub">Royaluxe Prints & Supplies Enterprise</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="exp-block">
+          <h2 class="exp-section-title">Education</h2>
+          <div class="exp-item">
+            <div class="exp-avatar edu">
+              <img
+                src="./assets/education.png"
+                alt="LASU"
+                class="exp-avatar-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="exp-info">
+              <div class="exp-role-row">
+                <h3 class="exp-role">
+                  Bachelor of Science in Mechanical Engineering
+                </h3>
+                <span class="exp-date">Oct. 2025</span>
+              </div>
+              <p class="exp-sub">Lagos State University</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Stack & Design Tools -->
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tech Stack</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon-experience"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon-experience"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon-experience"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon-experience"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Design Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon-experience"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>Pen & Paper</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon-experience"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon-experience"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>CorelDraw</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="checkmark"
+                  class="icon-experience"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>PhotoShop</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon-arrow arrow"
+        onclick="location.href = '#projects'"
+      />
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="fade-section hidden">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="project-img-wrapper">
+              <img
+                src="./assets/project-1.webp"
+                alt="Project 1"
+                class="project-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <p class="project-description">
+                A brief description of what this project does, the problem it
+                solves, and any notable achievements or impact.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MongoDB</span>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-1 project-btn"
+                  onclick="window.open('https://yoursite.com', '_blank')"
+                >
+                  <img
+                    src="./assets/website.png"
+                    alt="website"
+                    class="btn-icon-white"
+                  />
+                  Website
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="
+                    window.open('https://github.com/damistacks', '_blank')
+                  "
+                >
+                  <img
+                    src="./assets/github.png"
+                    alt="source"
+                    class="btn-icon"
+                  />
+                  Source
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="project-img-wrapper">
+              <img
+                src="./assets/project-2.webp"
+                alt="Project 2"
+                class="project-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <p class="project-description">
+                A brief description of what this project does, the problem it
+                solves, and any notable achievements or impact.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MongoDB</span>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-1 project-btn"
+                  onclick="window.open('https://yoursite.com', '_blank')"
+                >
+                  <img
+                    src="./assets/website.png"
+                    alt="website"
+                    class="btn-icon-white"
+                  />
+                  Website
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="
+                    window.open('https://github.com/damistacks', '_blank')
+                  "
+                >
+                  <img
+                    src="./assets/github.png"
+                    alt="source"
+                    class="btn-icon"
+                  />
+                  Source
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="project-img-wrapper">
+              <img
+                src="./assets/project-3.webp"
+                alt="Bankist Website"
+                class="project-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="project-content">
+              <h2 class="experience-sub-title project-title">
+                Bankist Website
+              </h2>
+              <p class="project-description">
+                Bankist is a minimalist online banking app built with HTML, CSS,
+                and vanilla JavaScript. It simulates real-world banking — users
+                can log in with a PIN, view transactions, transfer money,
+                request loans, and close accounts.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-1 project-btn"
+                  onclick="
+                    window.open(
+                      'https://damistacks.github.io/bankist/',
+                      '_blank',
+                    )
+                  "
+                >
+                  <img
+                    src="./assets/website.png"
+                    alt="website"
+                    class="btn-icon-white"
+                  />
+                  Website
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="
+                    window.open(
+                      'https://github.com/damistacks/bankist',
+                      '_blank',
+                    )
+                  "
+                >
+                  <img
+                    src="./assets/github.png"
+                    alt="source"
+                    class="btn-icon"
+                  />
+                  Source
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon-arrow arrow"
+        onclick="location.href = '#contact'"
+      />
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon-contact"
+            loading="lazy"
+          />
+          <p>
+            <a href="mailto:oluwasegun.d.idowu@gmail.com" class="custom-link"
+              >oluwasegun.d.idowu@gmail.com</a
             >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon-contact"
+            loading="lazy"
+          />
+          <p>
+            <a
+              onclick="
+                window.open('https://linkedin.com/in/oluwasegunidowu', '_blank')
+              "
+              class="custom-link"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
 
-        </section>
+    <!-- FOOTER -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="https://medium.com/@damistacks"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Oluwasegun Idowu. All Rights Reserved.
+      </p>
+    </footer>
 
-        <!-- CONTACT SECTION -->
-
-        <section id="contact">
-
-            <p class="section_text_p1">Get in Touch</p>
-            <h1 class="title">Contact Me</h1>
-
-            <div class="contact-info-upper-container">
-
-                <div class="contact-info-container">
-                    <img 
-                        src="./assets/email.png" 
-                        alt="Email icon" 
-                        class="icon-contact"
-                    >
-                    <p><a href="mailto:oluwasegun.d.idowu@gmail.com" class="custom-link">oluwasegun.d.idowu@gmail.com</a></p>
-                </div>
-
-                <div class="contact-info-container">
-                    <img 
-                        src="./assets/linkedin.png" 
-                        alt="Linkedin icon" 
-                        class="icon-contact"
-                    >
-                    <p><a onclick="window.open('https://linkedin.com/in/oluwasegunidowu', '_blank')" class="custom-link">LinkedIn</a></p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- FOOTER SECTION -->        
-
-        <footer>
-
-            <nav>
-                <div class="nav-links-container">
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="https://medium.com/@damistacks" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> Oluwasegun Idowu. All Rights Reserved.</p>
-
-        </footer>
-
-        <script src="script.js"></script>
-
-
-    </body>
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js" defer></script>
+  </body>
 </html>
