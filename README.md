@@ -4,7 +4,7 @@ I built my portfolio website from scratch and I used pure CSS to make it respons
 
 ## Deployment
 
-Demo: https://damistacks.github.io/myportfolio/
+Link: https://damistacks.github.io/myportfolio/
 
 ![myportfolio](./capture.webp)
 
