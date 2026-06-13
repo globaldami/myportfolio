@@ -4,7 +4,7 @@ I built my portfolio website from scratch and I used pure CSS to make it respons
 
 ## Deployment
 
-Link: https://damistacks.github.io/myportfolio/
+Link: https://globaldami.github.io/myportfolio/
 
 ![myportfolio](./capture.webp)
 
@@ -20,7 +20,7 @@ Link: https://damistacks.github.io/myportfolio/
 ## Author
 
   - **Oluwasegun Idowu**
-    [damistacks](https://github.com/damistacks/)
+    [globaldami](https://github.com/globaldami/)
 
 
 ## License
